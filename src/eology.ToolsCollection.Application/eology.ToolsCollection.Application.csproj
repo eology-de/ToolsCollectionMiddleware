@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>eology.ToolsCollection</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eology.ToolsCollection.Domain\eology.ToolsCollection.Domain.csproj" />
+    <ProjectReference Include="..\eology.ToolsCollection.Application.Contracts\eology.ToolsCollection.Application.Contracts.csproj" />
+    <ProjectReference Include="..\eology.ToolsCollection.ExcelExport\eology.ToolsCollection.ExcelExport.csproj" />
+    <ProjectReference Include="..\..\eology.SharedLibs.ExternalApis\eology.SharedLibs.ExternalApis.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Otp.NET" Version="1.4.0" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.HangFire" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.BackgroundWorkers.Hangfire" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>
